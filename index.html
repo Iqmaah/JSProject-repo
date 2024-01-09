@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Document</title>
+   
+</head>
+<body>
+    <div id = "header">
+        <span>Kindly input your name: <input type="string" id="UserName"> <button onclick= 'createUser()'>Submit</button></span>
+        
+        <div class="colordiv">
+            <button onclick="changeToWhite()" id="white"></button>
+            <button onclick="changeToPurple()" id="purple"></button>
+            <button onclick="changeToBlue()" id="Blue"></button>
+            <button onclick="changeToRed()" id="Red"></button>
+            <button onclick="changeToGreen()" id="Green"></button>
+            <button onclick="changeToOrange()" id="Orange"></button>
+        </div>
+        <p class="change">Click to change background color</p>
+    </div>
+    
+    <div class="intro">
+        <h1 class="welcome">Welcome <span id="thisUser" class="thename"></span> </h1>
+    </div>
+
+
+
+    <div class="pet">
+        <h2>Choose your pet!<h2>
+            <button class="pet-button" onclick="petDisplay('dog')">Dog</button>
+            <button class="pet-button" onclick="petDisplay('cat')">Cat</button>
+            <button class="pet-button" onclick="petDisplay('parrot')">Parrot</button>
+            <button class="pet-button" onclick="petDisplay('bunny')">Bunny</button>
+            <button class="pet-button" onclick="petDisplay('horse')">Horse</button>
+            <button class="pet-button" onclick="petDisplay('fish')">Fish</button>
+            
+            <div id="emojiDisplay"></div>
+    </div> 
+
+    <div class="thirdDiv">
+        <div id="form">
+            <form>
+                <input class="todo-input" type="text" placeholder="Add a task.">
+                <button class="todo-btn" type="submit">Add</button>
+            </form>
+        </div>
+    
+        <div id="myUnOrdList">
+            <ul class="todo-list">
+    
+            </ul>
+        </div>
+    </div>
+    
+    
+
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
