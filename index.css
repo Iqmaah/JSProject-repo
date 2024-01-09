@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Work Sans', sans-serif;
+    min-height: 100vh;
+    padding-top: 3%;
+    row-gap: 50px;
+}
+
+.welcome{
+    font-size: 50px;
+    font-weight: bold;
+}
+.thename{
+    font-style: italic;
+}
+
+.change{
+    display: flex;
+    align-self: flex-end;
+    margin-right: 4%;
+    /* font-size: medium; */
+    font-weight: bold;
+    font-style: italic;
+}
+
+.intro{
+    text-align: center;
+}
+
+.pet{
+    text-align: center;
+}
+
+.pet-button {
+	font-size: 16px;
+	padding: 10px 20px;
+	margin: 10px;
+}
+
+#purple{color: purple;}
+#Blue{color: blue;}
+#Red{color: red;}
+#Green{color: green;}
+#Orange{color: orange;}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 25vh;
+    width: 100%;
+    row-gap: 20px;
+}
+
+#header, #form, #datetime {
+    margin: 0 1rem;
+    min-height: 10vh;
+    width: 100%;
+}
+
+/* Theme buttons div */
+.flexrow-container {
+    align-items: center;
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 3%;
+}
+
+#white{
+    color: white;
+    border-radius: 100%;
+    padding: 4px;
+    background-color: white;
+    width: 40px;
+    height:40px;
+    border: 1px solid black;
+}
+
+#purple{
+    color: purple;
+    border-radius: 100%;
+    padding: 4px;
+    background-color: purple;
+    width: 40px;
+    height:40px;
+    border: 1px solid white;
+}
+#Blue{
+    color: blue;
+    border-radius: 100%;
+    padding: 4px;
+    background-color: blue;
+    width: 40px;
+    height:40px;
+    border: 1px solid white;
+}
+#Red{
+    color: red;
+    border-radius: 100%;
+    padding: 4px;
+    background-color: red;
+    width: 40px;
+    height:40px;
+    border: 1px solid white;
+}
+#Green{
+    color: green;
+    border-radius: 100%;
+    padding: 4px;
+    background-color: green;
+    width: 40px;
+    height:40px;
+    border: 1px solid white;
+}
+#Orange{
+    color: orange;
+    border-radius: 100%;
+    padding: 4px;
+    background-color: orange;
+    width: 40px;
+    height:40px;
+    border: 1px solid white;
+}
+
+.colordiv{
+    display: flex;
+    gap: 15px;
+    align-self: flex-end;
+    margin-right: 4%;
+
+}
+
+form {
+    display: flex;
+    font-size: 1.7rem;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+form input {
+    padding: 10px;
+    font-size: 17px;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    max-width: 500px;
+    transition: background-color 200ms ease-in-out;
+    width: 100%;
+}
+
+button {
+    border: none;
+    outline: none; 
+    padding: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+form button {
+    padding: 10px;
+    font-size: 17px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    min-width: 100px;
+}
+
+#myUnOrdList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.todo-list {
+    min-width: 25%;
+
+    /* To remove the bullets of unordered list */
+    list-style: none;
+}
+
+.todo {
+    margin: 1rem;
+    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25em 0.5em;
+    border-radius: 30px;
+    transition: background-color 200ms ease-in-out;
+}
+
+.todo li{
+    padding: 7px;
+    font-size: 20px;
+    flex: 1; /* To push the trash and the check button to the right */
+    border-radius: 30px;
+
+    /* wraps the links */
+    overflow-wrap: anywhere;
+}
+
+.check-btn, .delete-btn {
+    font-size: 19px;
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    border-radius: 80%;
+    margin: 0 5px;
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash, .fa-check { 
+    pointer-events: none;
+}
+
+
+.completed {
+    transition: 0.2s;
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transition: 0.5s;
+    transform: translateY(45rem) rotateZ(45deg);
+    opacity: 0;
+}
+
+.thirdDiv{
+    width: 100%;
+}
